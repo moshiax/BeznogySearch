@@ -1,14 +1,14 @@
 
  :root{
     font-size: 14px;
-    color: #8B0000;
+    color: white;
  background: black;
 }
 
 *{
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-     color: #8B0000;
+     color: white;
 }
 
 .clearfix{
@@ -17,7 +17,7 @@
 
 .small{
     font-size: 13px;
-    color: #8B0000;
+    color: white;
 }
 
 /* == Site-Wide | Layout */
