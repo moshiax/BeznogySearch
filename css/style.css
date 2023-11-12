@@ -38,7 +38,7 @@ header{
    justify-content: flex-end; 
    align-items: center;
    padding: 6px;
-      color: #8B0000;
+      color: white;
 }
 
 header a{
@@ -68,7 +68,7 @@ header #btn-app{
     height: 40px;
     padding: 8px;
     cursor: pointer;
-    color: #8B0000;
+    color: white;
 }
 
 header #btn-app:hover{
@@ -76,7 +76,7 @@ header #btn-app:hover{
 }
 
 header #btn-app svg{
-   fill: #8B0000;
+   fill: white;
 }
 
 
@@ -171,7 +171,7 @@ main #offer-wrapper a{
 
 .copyright{
     padding: 20px;
-        color: #8B0000;
+        color: white;
     text-align: center;
 font-size: 23px;
 }
@@ -186,13 +186,13 @@ font-size: 23px;
     right: 0;
     background-color: black;
     bottom: 0;
-    color: #8B0000;
+    color: white;
  }
 footer #country{
     padding: 15px 30px;
     font-size: 15px;
     border-bottom: 1px solid #dadce0;
- color: #8B0000;
+ color: white;
 }
 
 footer #links{
@@ -200,7 +200,7 @@ footer #links{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
- color: #8B0000;
+ color: white;
 }
 
 footer #links > div{
