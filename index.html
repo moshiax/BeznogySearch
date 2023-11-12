@@ -40,8 +40,27 @@
 
   <!-- Start Main Element -->
     <main>
-        <div id="form-wrapper">
-    <form onsubmit="redirectDuckDuckGo(); return false;">
+     <style>
+
+    .centered-list {
+        position: absolute;
+        top: 10%;
+        left: 24%;
+        transform: translate(10%, 10%);
+		scale: 130%;
+		font-size: 1.5em; 
+		color : white; 
+		background : black;
+    }
+	  .search-engine-icon {
+        width: 20px; /* Задайте желаемую ширину иконки */
+        height: auto; /* Автоматическая высота, чтобы сохранить пропорции */
+        margin-right: 5px; /* Дополнительный отступ между иконкой и текстом */
+    }
+</style>
+
+<div id="form-wrapper">
+    <form onsubmit="redirectSearch(); return false;">
         <div id="search-wrapper">
             <div id="icon-search">
                 <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -50,13 +69,37 @@
             </div>
             <input id="search-input" name="q" type="text">
         </div>
+        <div>
+            <select id="search-engine" name="engine" class="centered-list">
+                <option value="duckduckgo">DuckDuckGo</option>
+                <option value="google">Google</option>
+				   <option value="bing">Bing</option>              
+            </select>
+        </div>
     </form>
 </div>
 
 <script>
-    function redirectDuckDuckGo() {
+    function redirectSearch() {
         var userInput = document.getElementById('search-input').value;
-        var redirectUrl = 'https://duckduckgo.com/?va=q&t=he&q=' + encodeURIComponent(userInput);
+        var selectedEngine = document.getElementById('search-engine').value;
+        var redirectUrl;
+
+        switch (selectedEngine) {
+            case 'duckduckgo':
+                redirectUrl = 'https://duckduckgo.com/?va=q&t=he&q=' + encodeURIComponent(userInput);
+                break;
+            case 'google':
+                redirectUrl = 'https://www.google.com/search?q=' + encodeURIComponent(userInput);
+                break;
+				 case 'bing':
+                redirectUrl = 'https://www.bing.com/search?q=' + encodeURIComponent(userInput);
+                break;
+            default:
+                console.error('Invalid search engine selection');
+                return;
+        }
+
         window.location.href = redirectUrl;
     }
 </script>
