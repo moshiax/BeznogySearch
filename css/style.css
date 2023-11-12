@@ -48,7 +48,7 @@ header a{
 header #sign-in{
     width: 110px;
     height: 36px;
-    background: #8B0000;
+    background: white;
     border: 1px solid transparent;
     border-radius: 4px;
     padding: 9px 15px;
@@ -58,7 +58,7 @@ header #sign-in{
 
 header #sign-in:hover{
     text-decoration: none;
-    background: 8B0000;
+    background: white;
     box-shadow: 0 1px 2px 0 rgb(66 133 244 / 30%), 0 1px 3px 1px rgb(66 133 244 / 15%);     
 }
 
