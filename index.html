@@ -26,19 +26,14 @@
 </audio>
 <body>
 
-    <!-- Start header Element -->
     <header>
  <a class="small" href="https://drive.google.com">Google Drive</a>
 <a class="small" href="https://moshiax.github.io/BeznogySearch/search-result.html">Drivesearch</a>
         <a class="small" href="https://mail.google.com/mail/&ogbl">Gmail</a>
-        <a class="small" href="https://www.bing.com/search?q=%3Bsgas&showconv=1">GPT-4</a>
-        <a id="sign-in" href="http://olegbeznogy.wixsite.com/beznogim/">БЕЗНОГNM</a>
+        <a id="sign-in" href="http://moshiax.github.io/files" style="display: block; text-align: center;">Files</a>
+
     </header>
-  <!-- End header Element -->
 
-
-
-  <!-- Start Main Element -->
     <main>
      <style>
 
@@ -53,9 +48,9 @@
 		background : black;
     }
 	  .search-engine-icon {
-        width: 20px; /* Задайте желаемую ширину иконки */
-        height: auto; /* Автоматическая высота, чтобы сохранить пропорции */
-        margin-right: 5px; /* Дополнительный отступ между иконкой и текстом */
+        width: 20px; 
+        height: auto; 
+        margin-right: 5px; 
     }
 </style>
 
@@ -109,7 +104,6 @@ N3МЕНИТЬ! <br><br> 2) ДУМАNT3 ТОЛЬКО О СЕБЕ! <br><br> 3) Р
           </p>
 
     </main>    
-    <!-- End Main Element -->
 	 <style>
    .special-image {
       position: fixed;
@@ -124,25 +118,22 @@ N3МЕНИТЬ! <br><br> 2) ДУМАNT3 ТОЛЬКО О СЕБЕ! <br><br> 3) Р
 <img src="image/132321.png" alt="rabbit" class="special-image" onclick="moveImage()">
 <script>
   const audioIds = ['audio1', 'audio2', 'audio3'];
- let isFlipped = false; // Добавлен флаг для отслеживания состояния зеркалирования
+ let isFlipped = false; 
  let isTextShown = false;
   function moveImage() {
-    // Получаем элемент изображения
-    var image = document.querySelector('.special-image');
 
-    // Перемещаем изображение на позицию горизонтально противоположную текущей
+    var image = document.querySelector('.special-image');
     var currentRight = parseFloat(getComputedStyle(image).right);
     var newRight = window.innerWidth - currentRight - image.width;
     image.style.right = newRight + 'px';
 
-    // Устанавливаем новый масштаб с учетом зеркалирования
-    isFlipped = !isFlipped; // Инвертируем флаг
+    isFlipped = !isFlipped;
     image.style.transform = isFlipped ? 'scaleX(-1) scale(2)' : 'scale(2)';
 	stopAllAudio();
     playRandomAudio();
     if (!isTextShown) {
       showMessage();
-      isTextShown = true; // Устанавливаем флаг, что текст был показан
+      isTextShown = true;
     }
   }
 
@@ -155,29 +146,23 @@ N3МЕНИТЬ! <br><br> 2) ДУМАNT3 ТОЛЬКО О СЕБЕ! <br><br> 3) Р
     audio.play();
   }
    function stopAllAudio() {
-    // Останавливаем все элементы аудио на странице
+
     document.querySelectorAll('audio').forEach(audio => audio.pause());
   }
 </script>
 
-    <!-- start footer element -->
     <footer>
         <div id="country"></div>
         <div id="links">
             <div>
-                <a href="https://about.google/?utm_source=google-LK&utm_medium=referral&utm_campaign=hp-footer&fg=1"></a>
-                <a href="https://www.google.com/intl/en_lk/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1"></a>
-                <a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1"></a>
-                <a href="https://google.com/search/howsearchworks/?fg=1"></a>
+                <a href="https://pornhub.com/gay"></a>
+
             </div>
             <div>
-                <a href="https://policies.google.com/privacy?hl=en-LK&fg=1"></a>
-                <a href="https://policies.google.com/terms?hl=en-LK&fg=1"></a>
-                <a href="javascript:void(0)"></a>
+
             </div>
         </div>
     </footer>
-    <!-- end footer element -->
-    
+
 </body>
 </html>
